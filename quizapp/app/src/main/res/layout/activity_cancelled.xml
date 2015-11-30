@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="midnight.quizapp.Cancelled">
+
+    <include
+        android:id="@+id/my_toolbar_actionbar"
+        layout="@layout/toolbar_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/cancelled"
+        android:id="@+id/image"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/my_toolbar_actionbar"
+        android:layout_centerHorizontal="true" />
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/cancelledText"
+      android:layout_marginTop="20dp"
+      android:id="@+id/cancelText"
+      android:layout_below="@+id/image"
+      android:textSize="22sp"
+      android:gravity="center"/>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#f44336"
+        android:text="Exit"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/cancelText"
+        android:layout_centerHorizontal="true"
+        android:onClick="exit" />
+</RelativeLayout>

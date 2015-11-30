@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/Background_grey"
+    android:layout_height="match_parent">
+
+
+    <it.gmariotti.cardslib.library.view.CardGridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="150dp"
+        android:numColumns="2"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/question"
+        android:verticalSpacing="3dp"
+        card:list_card_layout_resourceID="@layout/native_list_card_thumbnail_layout"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:id="@+id/AnswerGrid"/>
+
+
+    <include layout="@layout/button_add"
+        android:id="@+id/addButton"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </include>
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:id="@+id/number"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/timer"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/question"
+        android:layout_below="@+id/number"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:padding="5dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/timer"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Remaining : "
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/textView7"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/timer"/>
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:ems="10"
+        android:onClick="submit"
+        android:layout_marginBottom="10dp"
+        android:text="Submit"
+        android:id="@+id/register"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/number"
+        android:layout_alignStart="@+id/number" />
+
+
+
+
+</RelativeLayout>
