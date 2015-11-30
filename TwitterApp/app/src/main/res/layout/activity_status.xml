@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/statusActivity_status"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/statusAct_statusText"
+        android:layout_weight="0.5"
+        android:autoText="false"
+        android:hint="@string/statusActivity_statusText" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/statusActivity_updateButton"
+        android:id="@+id/statusAct_updateButton"
+        android:gravity="center"
+        android:onClick="buttonClicked" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/statusActivity_resetButton"
+        android:id="@+id/statusAct_resetButton"
+        android:layout_gravity="right"
+        android:onClick="buttonClicked" />
+
+</LinearLayout>

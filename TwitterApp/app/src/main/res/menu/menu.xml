@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".StatusActivity">
+
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/statusAct_startMenu" android:title="@string/statusActivity_menuStartRefresh"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/statusAct_stopMenu" android:title="@string/statusActivity_menuStopRefresh"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/statusAct_syncNow" android:title="@string/statusActivity_menuSyncNow"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/statusAct_status" android:title="@string/statusActivity_menuStatus"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>
